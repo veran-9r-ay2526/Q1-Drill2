@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Pizza Palace | Order Online</title>
+  <style>
+
+
+    body {
+      font-family: Raleway;
+      margin: 20px;
+    background-image: url("https://media1.thehungryjpeg.com/thumbs/800_75733_3eccfbb8cf50300fa03266e137e39a7e9a6f5d32.jpg");background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    h1 {
+      color: #8c0e0f;
+    }
+    fieldset {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+    }
+    legend {
+      font-weight: bold;
+      color: whitesmoke;
+    }
+    label {
+      display: inline-block;
+      margin: 5px 0;
+      color: floralwhite;
+    }
+    textarea {
+      width: 100%;
+      height: 80px;
+    }
+    .button-group {
+      margin-top: 15px;
+    }
+    button {
+      padding: 10px 15px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #b22222;
+      color: white;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #d63b3b;
+    }
+    form {
+      background-color: navajowhite;
+      width: 70%;
+      padding: 20px;
+      margin: auto;
+      border-radius: 30px;
+      border: 7px solid #083248;
+      box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.65);
+    }
+  </style>
+</head>
+<body>
+<form>
+      <h1>The Ruby Restaurant | Pizza Delivery</h1>
+      <p>Build your dream pizza and we'll deliver it fresh to your door!</p>
+
+      <fieldset style="background-color:#242c51;">
+      <legend>Your Information</legend>
+      <label>Name: <input type="text" name="name" placeholder="Enter your full name" required></label><br>
+      <label>Address: <input type="text" name="address" placeholder="Enter your address" required></label><br>
+      <label>Phone Number: <input type="tel" name="phone" placeholder="Enter your number" required></label><br>
+      <label>Email: <input type="email" name="email" placeholder="Enter your Email"></label><br>
+      <label>Delivery Instructions:<br>
+        <textarea name="instructions" maxlength="400" placeholder="No more than 400 characters"></textarea>
+      </label>
+      </fieldset>
+
+    <h2>Build your dream pizza!</h2>
+
+    <!-- Pizza Customization -->
+    <fieldset style="background-color:#242c51;">
+      <legend style="">Pizza Specifications</legend>
+      <fieldset>
+        <legend>Crust (choose one)</legend>
+        <label><input type="radio" name="crust" value="classic" required> Classic White</label><br>
+        <label><input type="radio" name="crust" value="multigrain"> Multigrain</label><br>
+        <label><input type="radio" name="crust" value="stuffed"> Cheese-Stuffed Crust</label><br>
+        <label><input type="radio" name="crust" value="glutenfree"> Gluten-Free</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Toppings (choose as many as you want)</legend>
+        <label><input type="checkbox" name="toppings[]" value="red_sauce"> Red Sauce</label><br>
+        <label><input type="checkbox" name="toppings[]" value="white_sauce"> White Sauce</label><br>
+        <label><input type="checkbox" name="toppings[]" value="mozzarella"> Mozzarella Cheese</label><br>
+        <label><input type="checkbox" name="toppings[]" value="pepperoni"> Pepperoni</label><br>
+        <label><input type="checkbox" name="toppings[]" value="mushrooms"> Mushrooms</label><br>
+        <label><input type="checkbox" name="toppings[]" value="peppers"> Peppers</label><br>
+        <label><input type="checkbox" name="toppings[]" value="anchovies"> Anchovies</label><br>
+        <label><input type="checkbox" name="toppings[]" value="olives"> Olives</label><br>
+        <label><input type="checkbox" name="toppings[]" value="bacon"> Bacon</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Quantity</legend>
+        <label>How many pizzas?
+          <select name="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4+">4+</option>
+          </select>
+        </label>
+      </fieldset>
+  </fieldset>
+
+  <div class="button-group">
+    <button type="button" onclick="confirmOrder()">Order Now 🍕</button>
+    <button type="reset">Reset</button>
+  </div>
+
+  <script>
+  function confirmOrder() {
+    alert("✅ Your pizza order has been received!");
+  }
+  </script>
+    </div>
+
+</form>
+</body>
+</html>
